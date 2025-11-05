@@ -31,3 +31,31 @@ Example: isAdult(21) should return 'Adult'.
 const isAdult = (age) => (age >= 18 ? "Adult" : "Minor");
 
 console.log("Exercise 2 Result:", isAdult(18));
+
+//-------------------------------------------------------------------------------------------
+
+/*
+Exercise 3: isCharAVowel()
+
+Write a function named isCharAVowel that takes a single character as 
+an argument. It should return true if the character is a vowel and 
+false otherwise. For the purposes of this exercise, the character 
+y should not be considered a vowel.
+
+Example: isCharAVowel('a') should return true.
+
+Complete the exercise in the space below:
+*/
+
+const isCharAVowel = (ch) => {
+  ch = ch.toLowerCase();
+  if (ch === "a") return true;
+  else if (ch === "e") return true;
+  else if (ch === "i") return true;
+  else if (ch === "o") return true;
+  else if (ch === "u") return true;
+  else return false;
+};
+
+console.log("Exercise 3 Result:", isCharAVowel("b"));
+
