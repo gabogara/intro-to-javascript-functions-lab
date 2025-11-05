@@ -15,7 +15,7 @@ const maxOfTwoNumbers = (x, y) => {
   }
 };
 
-//console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9));
+console.log("Exercise 1 Result:", maxOfTwoNumbers(3, 9));
 
 //----------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ Example: isAdult(21) should return 'Adult'.
 
 const isAdult = (age) => (age >= 18 ? "Adult" : "Minor");
 
-//console.log("Exercise 2 Result:", isAdult(18));
+console.log("Exercise 2 Result:", isAdult(18));
 
 //-------------------------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ const isCharAVowel = (ch) => {
   else return false;
 };
 
-//console.log("Exercise 3 Result:", isCharAVowel("b"));
+console.log("Exercise 3 Result:", isCharAVowel("b"));
 
 //-------------------------------------------------------------------------------------------
 
@@ -73,7 +73,7 @@ should return 'johnsmith@example.com'.
 
 const generateEmail = (name, domain) => `${name}@${domain}`;
 
-//console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
+console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 
 //---------------------------------------------------------------------------------------------
 
@@ -89,7 +89,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 
 const greetUser = (name, timeOfDay) => `Good ${timeOfDay}, ${name}!`;
 
-//console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
 
 //----------------------------------------------------------------------------------------------
 /*
@@ -109,8 +109,8 @@ const maxOfThree = (a, b, c) => {
   return c;
 };
 
-//console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
-//console.log("Exercise 6 Result:", maxOfThree(7, 7, 3));
+console.log("Exercise 6 Result:", maxOfThree(5, 10, 8));
+// console.log("Exercise 6 Result:", maxOfThree(7, 7, 3));
 
 //--------------------------------------------------------------------------------------------------
 /*
@@ -128,7 +128,7 @@ const calculateTip = (bill, tip) => {
 };
 
 //calculateTip(50, 20);
-//console.log(calculateTip(50, 20));
+console.log(calculateTip(50, 20));
 
 //------------------------------------------------------------------------------------------------------
 
@@ -155,9 +155,9 @@ const convertTemperature = (value, scale) => {
   }
 };
 
-// console.log("Exercise 8 Result:", convertTemperature(32, "C"));
-// console.log("Exercise 8 Result:", convertTemperature(32, "F"));
-// console.log("Exercise 8 Result:", convertTemperature(32, "V"));
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
+console.log("Exercise 8 Result:", convertTemperature(32, "F"));
+console.log("Exercise 8 Result:", convertTemperature(32, "V"));
 
 //-----------------------------------------------------------------------------------------------------
 
@@ -191,11 +191,11 @@ const basicCalculator = (a, b, operation) => {
   }
 };
 
-// console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
-// console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
-// console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"));
-// console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"));
-// console.log("Exercise 9 Result:", basicCalculator(10, 5, "other"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"));
+console.log("Exercise 9 Result:", basicCalculator(10, 5, "other"));
 
 //------------------------------------------------------------------------------------------------
 
@@ -228,8 +228,8 @@ const calculateGrade = (score) => {
   }
 };
 
-// console.log("Exercise 10 Result:", calculateGrade(85));
-// console.log("Exercise 10 Result:", calculateGrade(100));
+console.log("Exercise 10 Result:", calculateGrade(85));
+console.log("Exercise 10 Result:", calculateGrade(100));
 
 //-------------------------------------------------------------------------------------------------
 /*
@@ -257,3 +257,16 @@ const createUsername = (firstN, lastN) => {
 
 //console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
 console.log("Exercise 11 Result:", createUsername("Gabriel", "Restrepo"));
+
+//---------------------------------------------------------------------------------------------------
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+//console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
