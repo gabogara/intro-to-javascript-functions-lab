@@ -191,8 +191,69 @@ const basicCalculator = (a, b, operation) => {
   }
 };
 
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"));
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"));
-console.log("Exercise 9 Result:", basicCalculator(10, 5, "other"));
+// console.log("Exercise 9 Result:", basicCalculator(10, 5, "add"));
+// console.log("Exercise 9 Result:", basicCalculator(10, 5, "subtract"));
+// console.log("Exercise 9 Result:", basicCalculator(10, 5, "multiply"));
+// console.log("Exercise 9 Result:", basicCalculator(10, 5, "divide"));
+// console.log("Exercise 9 Result:", basicCalculator(10, 5, "other"));
+
+//------------------------------------------------------------------------------------------------
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+const calculateGrade = (score) => {
+  if (score >= 90) {
+    return "A";
+  } else if (score >= 80 && score < 90) {
+    return "B";
+  } else if (score >= 70 && score < 80) {
+    return "C";
+  } else if (score >= 60 && score < 70) {
+    return "D";
+  } else if (score < 60) {
+    return "F";
+  }
+};
+
+// console.log("Exercise 10 Result:", calculateGrade(85));
+// console.log("Exercise 10 Result:", calculateGrade(100));
+
+//-------------------------------------------------------------------------------------------------
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+
+const createUsername = (firstN, lastN) => {
+  const firstPart = firstN.slice(0, 3);
+  const lastPart = lastN.slice(0, 3);
+  const totalLen = firstN.length + lastN.length;
+  return firstPart + lastPart + totalLen;
+};
+
+console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+console.log("Exercise 11 Result:", createUsername("Gabriel", "Restrepo"));
