@@ -30,7 +30,7 @@ Example: isAdult(21) should return 'Adult'.
 
 const isAdult = (age) => (age >= 18 ? "Adult" : "Minor");
 
-console.log("Exercise 2 Result:", isAdult(18));
+//console.log("Exercise 2 Result:", isAdult(18));
 
 //-------------------------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ const isCharAVowel = (ch) => {
   else return false;
 };
 
-console.log("Exercise 3 Result:", isCharAVowel("b"));
+//console.log("Exercise 3 Result:", isCharAVowel("b"));
 
 //-------------------------------------------------------------------------------------------
 
@@ -73,7 +73,21 @@ should return 'johnsmith@example.com'.
 
 const generateEmail = (name, domain) => `${name}@${domain}`;
 
-console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
-
+//console.log("Exercise 4 Result:", generateEmail("johnsmith", "example.com"));
 
 //---------------------------------------------------------------------------------------------
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+*/
+
+const greetUser = (name, timeOfDay) => `Good ${timeOfDay}, ${name}!`;
+
+console.log("Exercise 5 Result:", greetUser("Sam", "morning"));
+
