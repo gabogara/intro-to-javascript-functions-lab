@@ -255,5 +255,5 @@ const createUsername = (firstN, lastN) => {
   return firstPart + lastPart + totalLen;
 };
 
-console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+//console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
 console.log("Exercise 11 Result:", createUsername("Gabriel", "Restrepo"));
