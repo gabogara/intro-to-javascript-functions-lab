@@ -128,4 +128,33 @@ const calculateTip = (bill, tip) => {
 };
 
 //calculateTip(50, 20);
-console.log(calculateTip(50, 20));
+//console.log(calculateTip(50, 20));
+
+//------------------------------------------------------------------------------------------------------
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+*/
+
+const convertTemperature = (value, scale) => {
+  if (scale === "C") {
+    return (value * 9) / 5 + 32;
+  } else if (scale === "F") {
+    return ((value - 32) * 5) / 9;
+  } else {
+    return "invalid scale";
+  }
+};
+
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
+console.log("Exercise 8 Result:", convertTemperature(32, "F"));
+console.log("Exercise 8 Result:", convertTemperature(32, "V"));
